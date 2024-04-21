@@ -1,3 +1,4 @@
+
 # 1026. 보물
 n = int(input())
 a = list(map(int, input().split()))
@@ -26,3 +27,4 @@ def quick_sort(lst):  # 퀵정렬
         else:
             equal_arr.append(i)
     return quick_sort(less_arr) + equal_arr + quick_sort(big_arr)
+
