@@ -1,3 +1,4 @@
+
 n = int(input())
 
 # numbers = list(map(int, input().split()))
@@ -25,7 +26,5 @@ if flag == 1:
 else:
     for i in res:
         print(i)
-
-
 
 

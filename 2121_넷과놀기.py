@@ -1,3 +1,4 @@
+
 # def binary_search(t):
 #     l = 0
 #     r = n - 1

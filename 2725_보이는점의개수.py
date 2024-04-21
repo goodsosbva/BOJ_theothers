@@ -1,3 +1,4 @@
+
 # def calculateInclination(x, y):
 #     return x / y
 #
@@ -46,4 +47,5 @@ for _ in range(tc):
 
     answer = uniqueInclinations(n)
     print(answer)
+
 
