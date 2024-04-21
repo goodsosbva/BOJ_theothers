@@ -1,0 +1,62 @@
+# n = int(input())
+# v = list(map(int, input().split()))
+
+# print(n, v)
+# def check(mid):
+#     t = 0
+#     for i in range(n):
+#         if v[i] >= mid:
+#             t += 1
+#         else:
+#             t = 0
+#         if t >= mid:
+#             return True
+#     return False
+
+# lo, hi = 1, n
+# while lo + 1 < hi:
+#     mid = (lo + hi) // 2
+#     # print(mid)
+#     if check(mid):
+#         lo = mid
+#     else:
+#         hi = mid
+
+# print(lo)
+
+
+def possibleRetangle(m):
+    cnt = 0
+
+    for i in range(n):
+        if histos[i] >= m:
+            cnt += 1
+        else:
+            cnt = 0
+
+        if cnt >= m:
+            return True
+    return False
+
+n = int(input())
+histos = list(map(int, input().split()))
+
+l = 1
+r = n + 1
+
+while l < r:
+    m = (l + r) // 2
+    # print(m, l, r)
+    if possibleRetangle(m):
+        l = m + 1
+    else:
+        r = m
+
+print(l - 1)
+
+
+
+# 6
+# 3 4 4 4 4 3
+
+
