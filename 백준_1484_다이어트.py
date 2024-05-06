@@ -14,7 +14,7 @@ while True:
     elif curWeight - oldWeight != 1 and curWeight * curWeight - oldWeight * oldWeight > g:
         oldWeight += 1
 
-    # 탈출 조건 g 보다 큰데 현재 값이 가장 작은 값인 상황 그럼 더 볼 필요 없는 것
+    # 탈출 조건 g 보다 큰데 현재 값이 가장 작은 값인 상황 -> 그럼 더 볼 필요 없는 것
     if curWeight - oldWeight == 1 and curWeight * curWeight - oldWeight * oldWeight > g:
         break
 
